@@ -1,0 +1,66 @@
+
+.container{
+border: solid 1cqb;
+font-size: 20px;
+text-align: center;
+background-color: #00ffff17;
+border-radius: 5rem;
+
+}
+label{
+   display: inline-block;
+   text-align:left;
+   margin: right 10px;
+   width:140px;
+}
+
+.button {
+  background-color: #b222224a;
+  border: none;
+  color: white;
+  padding: 7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:44%;
+  }
+  body{
+    overflow:hidden; 
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+}
+form{
+padding-top: 0rem;
+box-sizing: border-box;
+padding-left: 15rem;
+padding-right: 15rem;
+
+}a:hover {
+background-color: #b22222;
+}
+.button:hover{
+background-color: #b22222; 
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 50%;
+    height: 35;
+    padding: 5px;
+    border-color: white;
+    margin-bottom: 10px;
+    
+}
+.error{
+  color: red;
+  font-size: 15px;
+ 
+}
+input:focus{
+  outline:none;
+  border-color: blue;
+}

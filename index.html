@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal css -->
+    <style>
+       
+  .container{
+    border: solid 1px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00ffff17;
+    padding: 0px 3rem; }
+ label{
+        display: inline-block;
+        text-align:left;
+        margin: right 10px;
+        width:140px;}
+  .button {
+            background-color: #b222224a;
+            border: none;
+            color: white;
+            padding: 7px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 7px 2px;
+            cursor: pointer;
+            border-radius:44%;  }        
+    body{
+        overflow:hidden; 
+        padding:2rem;
+        background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");} 
+a:hover { 
+  background-color: #b22222;}
+.button:hover{
+    background-color: #b22222; }
+ input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 55%;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 10px;}
+ h1{
+        font-size: 20px;
+    }
+     </style>
+     <!-- Script -->
+     <script src="script.js">
+      
+     </script>
+    
+</head>
+<body>
+    <form name="reg"  method="post">
+        <div  class="container">
+            <h1>Form</h1>
+            <label  >First name</label>
+            <input  type="text" id="fname" onchange="print(Err)" name="fname"  >
+            <div class="error" id="Err"></div>
+            <label for="lname">Last name</label>
+            <input   type="text" id="lname" onchange="printlname(lnameErr)" name="lname" >
+            <div class="error" id="lnameErr"></div>
+            <label for="email">Email</label>
+            <input type="text" id="email" onchange="printemail(emailErr)" name="email">
+            <div class="error" id="emailErr"></div>
+            <label for="number">Mobile Number</label>
+            <input type="number" id="number" onchange="printnumber(numberErr)" name="number" >
+            <div class="error" id="numberErr"></div>
+            <label for="address">City</label>
+            <input type="text" id="address" onchange="printcity(cityErr)" name="city" >
+            <div class="error" id="cityErr"></div>
+            <label for="code">Pincode</label>
+            <input type="number" id="code" onchange="printcode(codeErr)" name="code" >
+            <div class="error" id="codeErr"></div>
+            <input class="button" type="submit" form="form" onclick="return val()" value="submit"  >
+            
+          </form>
+          
+
+            
+  
+
+        </div>
+        
+    </form>    
+    
+    
+    
+</body>
+</html>
